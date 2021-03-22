@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#capa {
+  width: 100vw;
+  height: 100vh;
+  background: url(imagens/Capa.jpg) no-repeat;
+  background-attachment: fixed;
+}
+
+.cabecalho {
+  width: 100vw;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 999;
+
+  background: linear-gradient(to bottom, #808080 0%, #ffffff00 100%);
+}
+
+.cabecalho img {
+  width: 300px;
+}
+
+.cabecalho nav a {
+  padding: 10px;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cabecalho nav a:hover {
+  color: #ffffff;
+}
+
+#sobre-mim {
+  width: 100vw;
+  height: 100vh;
+  background: url(./imagens/darkWood.png);
+  opacity: 95%;
+  background-attachment: fixed;
+}
+
+#sobre {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.card img {
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid #808080;
+}
+
+.card .nome {
+  margin-left: 20px;
+  font-family: Roboto;
+}
+
+.card .nome h1 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.card .nome h2 {
+  color: #979797;
+  font-weight: 400;
+}
+
+.status {
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.status p {
+  color: #fff;
+  font-family: Roboto;
+  padding: 20px;
+  font-size: 24px;
+}
+
+#sobre-Mim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sobre-Mim h1 {
+  color: #fff;
+  font-family: Rajdhani;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#sobre-Mim p {
+  width: 70%;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#formacoes {
+  width: 100vw;
+  height: 100vh;
+  background: url(./imagens/darkWood.png);
+  opacity: 95%;
+  background-attachment: fixed;
+}
+
+#formationSkills {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#formations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formations .title {
+  color: #fff;
+  font-family: Rajdhani;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.cursoLogo {
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+#formations .curso {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 26px;
+  color: #fff;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#linguagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "HTML CSS"
+    "JS React";
+}
+
+#skills .title {
+  color: #fff;
+  font-family: Rajdhani;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.html {
+  height: 300px;
+}
+
+.html img {
+  grid-area: html;
+  width: 70%;
+  margin-top: 40px;
+}
+
+.html h2 {
+  font-family: Roboto;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.css {
+  height: 300px;
+}
+
+.css img {
+  grid-area: html;
+  width: 40%;
+  margin-top: 35px;
+}
+
+.css h2 {
+  font-family: Roboto;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.js {
+  height: 300px;
+}
+
+.js img {
+  grid-area: html;
+  width: 33%;
+  margin-top: 35px;
+}
+
+.js h2 {
+  font-family: Roboto;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.react {
+  height: 300px;
+}
+
+.react img {
+  grid-area: html;
+  width: 45%;
+  margin-top: 25px;
+}
+
+.react h2 {
+  font-family: Roboto;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 13px;
+}
+
+#contatos {
+  width: 100vw;
+  height: 100vh;
+  background: url(./imagens/darkWood.png);
+  opacity: 95%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#contatos h1 {
+  text-align: center;
+  color: #fff;
+  font-family: Rajdhani;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contato a img {
+  height: 220px;
+  opacity: 70%;
+  transition: 0.2s;
+}
+
+.contato a img:hover {
+  height: 220px;
+  opacity: 100%;
+}
+
+.despedida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.despedida h2 {
+  font-family: Rajdhani;
+  font-size: 30px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.despedida h2 span {
+  color: rgb(18, 145, 39);
+  font-weight: bold;
+}
